@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="620.0" prefWidth="740.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-color: gray;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo05.proyectoed.ElegirContacto">
+   <children>
+      <Pane prefHeight="645.0" prefWidth="696.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="41.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#switchToSecondary" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagenes/Regresar2.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="6.0" layoutY="103.0" prefHeight="218.0" prefWidth="696.0">
+               <children>
+                  <ImageView fx:id="imgPr" fitHeight="120.0" fitWidth="130.0" onMouseClicked="#switchToPersona" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/Persona.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="40.0" prefWidth="70.0" text="Persona">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="6.0" layoutY="288.0" prefHeight="224.0" prefWidth="696.0">
+               <children>
+                  <ImageView fitHeight="111.0" fitWidth="117.0" onMouseClicked="#switchToEmpresa" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/Empresa.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Empresa">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button layoutX="57.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="28.0" prefWidth="95.0" style="-fx-background-color: F6FCAA; -fx-background-radius: 20;" text="Regresar" />
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <effect>
+      <DropShadow />
+   </effect>
+</VBox>
