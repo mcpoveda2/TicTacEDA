@@ -1,7 +1,8 @@
-module com.poo05.proyectoed {
+module ec.edu.espol.tictactoegame {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.base;
 
-    opens com.poo05.proyectoed to javafx.fxml;
-    exports com.poo05.proyectoed;
+    opens ec.edu.espol.tictactoegame to javafx.fxml;
+    exports ec.edu.espol.tictactoegame;
 }
