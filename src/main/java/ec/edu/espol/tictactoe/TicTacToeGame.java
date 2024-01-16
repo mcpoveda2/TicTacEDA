@@ -36,7 +36,7 @@ public class TicTacToeGame {
             for(Celda c2:tablero.celdas){
                 if(c1!=c2){
                     if(Tablero.verificar3EnRaya(c1, c2, cverificar))
-                        return 5;
+                        return 15;
                 }
             }
         }
@@ -73,6 +73,7 @@ public class TicTacToeGame {
                 tablero.cambiarCelda(c1.fila, c1.columna, "X");
                 System.out.println(tablero);
             }else{
+                System.out.println(tablero);
                 System.out.println("Ingrese una fila y columna (fila,columna): ");
                 String seleccion = sc.nextLine();
                 String[] tokens = seleccion.split(",");
